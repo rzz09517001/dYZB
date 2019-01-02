@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5634BCA921DA5C1500F41973 /* AppDelegate.swift */; };
+		5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB021DA5C1600F41973 /* Assets.xcassets */; };
+		5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB221DA5C1600F41973 /* LaunchScreen.storyboard */; };
+		565A6DBA21DCEB3F001C0EDC /* RZZRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */; };
+		565A6DBB21DCEB3F001C0EDC /* RZZRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */; };
+		566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA84D21DB2CF7002D23D0 /* RZZTabBarViewController.swift */; };
+		566FA85021DB32DA002D23D0 /* RZZNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA84F21DB32DA002D23D0 /* RZZNavigationViewController.swift */; };
+		566FA85221DB3677002D23D0 /* RZZBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA85121DB3677002D23D0 /* RZZBaseViewController.swift */; };
+		566FA85521DB3DD9002D23D0 /* RZZHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA85321DB3DD9002D23D0 /* RZZHomeViewController.swift */; };
+		566FA85B21DB3DFA002D23D0 /* RZZLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA85921DB3DFA002D23D0 /* RZZLiveViewController.swift */; };
+		566FA85C21DB3DFA002D23D0 /* RZZLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566FA85A21DB3DFA002D23D0 /* RZZLiveViewController.xib */; };
+		566FA85F21DB3E08002D23D0 /* RZZFollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA85D21DB3E08002D23D0 /* RZZFollowViewController.swift */; };
+		566FA86021DB3E08002D23D0 /* RZZFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566FA85E21DB3E08002D23D0 /* RZZFollowViewController.xib */; };
+		566FA86321DB3E19002D23D0 /* RZZMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86121DB3E19002D23D0 /* RZZMyViewController.swift */; };
+		566FA86421DB3E19002D23D0 /* RZZMyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 566FA86221DB3E19002D23D0 /* RZZMyViewController.xib */; };
+		566FA86721DB5CE7002D23D0 /* UIBarButtonItem-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86621DB5CE7002D23D0 /* UIBarButtonItem-extension.swift */; };
+		566FA86A21DB649E002D23D0 /* RZZPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86921DB649E002D23D0 /* RZZPageTitleView.swift */; };
+		566FA86C21DB684C002D23D0 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86B21DB684C002D23D0 /* common.swift */; };
+		566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */; };
+		566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86F21DB7823002D23D0 /* UIColor-extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5634BCA621DA5C1500F41973 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5634BCA921DA5C1500F41973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5634BCB021DA5C1600F41973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5634BCB321DA5C1600F41973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5634BCB521DA5C1600F41973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZRecommendViewController.swift; sourceTree = "<group>"; };
+		565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZRecommendViewController.xib; sourceTree = "<group>"; };
+		566FA84D21DB2CF7002D23D0 /* RZZTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZTabBarViewController.swift; sourceTree = "<group>"; };
+		566FA84F21DB32DA002D23D0 /* RZZNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZNavigationViewController.swift; sourceTree = "<group>"; };
+		566FA85121DB3677002D23D0 /* RZZBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZBaseViewController.swift; sourceTree = "<group>"; };
+		566FA85321DB3DD9002D23D0 /* RZZHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZHomeViewController.swift; sourceTree = "<group>"; };
+		566FA85921DB3DFA002D23D0 /* RZZLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZLiveViewController.swift; sourceTree = "<group>"; };
+		566FA85A21DB3DFA002D23D0 /* RZZLiveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZLiveViewController.xib; sourceTree = "<group>"; };
+		566FA85D21DB3E08002D23D0 /* RZZFollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZFollowViewController.swift; sourceTree = "<group>"; };
+		566FA85E21DB3E08002D23D0 /* RZZFollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZFollowViewController.xib; sourceTree = "<group>"; };
+		566FA86121DB3E19002D23D0 /* RZZMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZMyViewController.swift; sourceTree = "<group>"; };
+		566FA86221DB3E19002D23D0 /* RZZMyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZMyViewController.xib; sourceTree = "<group>"; };
+		566FA86621DB5CE7002D23D0 /* UIBarButtonItem-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-extension.swift"; sourceTree = "<group>"; };
+		566FA86921DB649E002D23D0 /* RZZPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZPageTitleView.swift; sourceTree = "<group>"; };
+		566FA86B21DB684C002D23D0 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
+		566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZPageContentView.swift; sourceTree = "<group>"; };
+		566FA86F21DB7823002D23D0 /* UIColor-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5634BCA321DA5C1500F41973 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5634BC9D21DA5C1500F41973 = {
+			isa = PBXGroup;
+			children = (
+				5634BCA821DA5C1500F41973 /* DouYuZB */,
+				5634BCA721DA5C1500F41973 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5634BCA721DA5C1500F41973 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5634BCA621DA5C1500F41973 /* DouYuZB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5634BCA821DA5C1500F41973 /* DouYuZB */ = {
+			isa = PBXGroup;
+			children = (
+				5634BCBB21DA625A00F41973 /* Classes */,
+				5634BCA921DA5C1500F41973 /* AppDelegate.swift */,
+				5634BCB021DA5C1600F41973 /* Assets.xcassets */,
+				5634BCB221DA5C1600F41973 /* LaunchScreen.storyboard */,
+				5634BCB521DA5C1600F41973 /* Info.plist */,
+			);
+			path = DouYuZB;
+			sourceTree = "<group>";
+		};
+		5634BCBB21DA625A00F41973 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				566FA86821DB6471002D23D0 /* CommonView */,
+				5634BCBC21DA626200F41973 /* Main */,
+				5634BCBD21DA626A00F41973 /* Home */,
+				5634BCBE21DA627C00F41973 /* Live */,
+				5634BCBF21DA628100F41973 /* Follow */,
+				5634BCC021DA628C00F41973 /* Profile */,
+				5634BCC121DA62A000F41973 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5634BCBC21DA626200F41973 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				566FA84D21DB2CF7002D23D0 /* RZZTabBarViewController.swift */,
+				566FA84F21DB32DA002D23D0 /* RZZNavigationViewController.swift */,
+				566FA85121DB3677002D23D0 /* RZZBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5634BCBD21DA626A00F41973 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				565A6DB521DCEAC5001C0EDC /* Model */,
+				565A6DB721DCEADB001C0EDC /* View */,
+				565A6DB621DCEAD3001C0EDC /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5634BCBE21DA627C00F41973 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				566FA85921DB3DFA002D23D0 /* RZZLiveViewController.swift */,
+				566FA85A21DB3DFA002D23D0 /* RZZLiveViewController.xib */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		5634BCBF21DA628100F41973 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				566FA85D21DB3E08002D23D0 /* RZZFollowViewController.swift */,
+				566FA85E21DB3E08002D23D0 /* RZZFollowViewController.xib */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		5634BCC021DA628C00F41973 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				566FA86121DB3E19002D23D0 /* RZZMyViewController.swift */,
+				566FA86221DB3E19002D23D0 /* RZZMyViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5634BCC121DA62A000F41973 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				566FA86521DB5CCD002D23D0 /* extension */,
+				566FA86B21DB684C002D23D0 /* common.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		565A6DB521DCEAC5001C0EDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		565A6DB621DCEAD3001C0EDC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566FA85321DB3DD9002D23D0 /* RZZHomeViewController.swift */,
+				565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */,
+				565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		565A6DB721DCEADB001C0EDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		566FA86521DB5CCD002D23D0 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				566FA86621DB5CE7002D23D0 /* UIBarButtonItem-extension.swift */,
+				566FA86F21DB7823002D23D0 /* UIColor-extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		566FA86821DB6471002D23D0 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				566FA86921DB649E002D23D0 /* RZZPageTitleView.swift */,
+				566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5634BCA521DA5C1500F41973 /* DouYuZB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5634BCB821DA5C1600F41973 /* Build configuration list for PBXNativeTarget "DouYuZB" */;
+			buildPhases = (
+				5634BCA221DA5C1500F41973 /* Sources */,
+				5634BCA321DA5C1500F41973 /* Frameworks */,
+				5634BCA421DA5C1500F41973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DouYuZB;
+			productName = DouYuZB;
+			productReference = 5634BCA621DA5C1500F41973 /* DouYuZB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5634BC9E21DA5C1500F41973 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RZZ;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = rzz;
+				TargetAttributes = {
+					5634BCA521DA5C1500F41973 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 5634BCA121DA5C1500F41973 /* Build configuration list for PBXProject "DouYuZB" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5634BC9D21DA5C1500F41973;
+			productRefGroup = 5634BCA721DA5C1500F41973 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5634BCA521DA5C1500F41973 /* DouYuZB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5634BCA421DA5C1500F41973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566FA86021DB3E08002D23D0 /* RZZFollowViewController.xib in Resources */,
+				5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */,
+				565A6DBB21DCEB3F001C0EDC /* RZZRecommendViewController.xib in Resources */,
+				5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */,
+				566FA85C21DB3DFA002D23D0 /* RZZLiveViewController.xib in Resources */,
+				566FA86421DB3E19002D23D0 /* RZZMyViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5634BCA221DA5C1500F41973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */,
+				566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */,
+				566FA85021DB32DA002D23D0 /* RZZNavigationViewController.swift in Sources */,
+				566FA86A21DB649E002D23D0 /* RZZPageTitleView.swift in Sources */,
+				5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */,
+				566FA86C21DB684C002D23D0 /* common.swift in Sources */,
+				566FA85221DB3677002D23D0 /* RZZBaseViewController.swift in Sources */,
+				566FA85521DB3DD9002D23D0 /* RZZHomeViewController.swift in Sources */,
+				565A6DBA21DCEB3F001C0EDC /* RZZRecommendViewController.swift in Sources */,
+				566FA85F21DB3E08002D23D0 /* RZZFollowViewController.swift in Sources */,
+				566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */,
+				566FA86721DB5CE7002D23D0 /* UIBarButtonItem-extension.swift in Sources */,
+				566FA85B21DB3DFA002D23D0 /* RZZLiveViewController.swift in Sources */,
+				566FA86321DB3E19002D23D0 /* RZZMyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5634BCB221DA5C1600F41973 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5634BCB321DA5C1600F41973 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5634BCB621DA5C1600F41973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5634BCB721DA5C1600F41973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5634BCB921DA5C1600F41973 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouYuZB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinarzz.DouYuZB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5634BCBA21DA5C1600F41973 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DouYuZB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinarzz.DouYuZB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5634BCA121DA5C1500F41973 /* Build configuration list for PBXProject "DouYuZB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5634BCB621DA5C1600F41973 /* Debug */,
+				5634BCB721DA5C1600F41973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5634BCB821DA5C1600F41973 /* Build configuration list for PBXNativeTarget "DouYuZB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5634BCB921DA5C1600F41973 /* Debug */,
+				5634BCBA21DA5C1600F41973 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5634BC9E21DA5C1500F41973 /* Project object */;
+}
