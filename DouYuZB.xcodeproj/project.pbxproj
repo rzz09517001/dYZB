@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5625F5A221DEF90800FF090D /* RZZCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625F5A021DEF90800FF090D /* RZZCollectionHeaderView.swift */; };
+		5625F5A321DEF90800FF090D /* RZZCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5625F5A121DEF90800FF090D /* RZZCollectionHeaderView.xib */; };
+		5625F5A621DF3A4700FF090D /* RZZCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625F5A421DF3A4700FF090D /* RZZCollectionNormalCell.swift */; };
+		5625F5A721DF3A4700FF090D /* RZZCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5625F5A521DF3A4700FF090D /* RZZCollectionNormalCell.xib */; };
+		5625F5AA21DF3FE200FF090D /* RZZCollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625F5A821DF3FE200FF090D /* RZZCollectionPrettyCell.swift */; };
+		5625F5AB21DF3FE200FF090D /* RZZCollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5625F5A921DF3FE200FF090D /* RZZCollectionPrettyCell.xib */; };
+		5625F5AD21DF4EC100FF090D /* RZZNetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5625F5AC21DF4EC100FF090D /* RZZNetWorkTools.swift */; };
 		5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5634BCA921DA5C1500F41973 /* AppDelegate.swift */; };
 		5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB021DA5C1600F41973 /* Assets.xcassets */; };
 		5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB221DA5C1600F41973 /* LaunchScreen.storyboard */; };
@@ -27,9 +34,20 @@
 		566FA86C21DB684C002D23D0 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86B21DB684C002D23D0 /* common.swift */; };
 		566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */; };
 		566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86F21DB7823002D23D0 /* UIColor-extension.swift */; };
+		A5C425E0CE7511278E48276E /* Pods_DouYuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CD17083CC56182905C4ABB /* Pods_DouYuZB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07CD17083CC56182905C4ABB /* Pods_DouYuZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYuZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DD3A87B22361D67EC1A9785 /* Pods-DouYuZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB.debug.xcconfig"; sourceTree = "<group>"; };
+		30792BFC4538C0AC7127C5E6 /* Pods-DouYuZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYuZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB.release.xcconfig"; sourceTree = "<group>"; };
+		5625F5A021DEF90800FF090D /* RZZCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZCollectionHeaderView.swift; sourceTree = "<group>"; };
+		5625F5A121DEF90800FF090D /* RZZCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZCollectionHeaderView.xib; sourceTree = "<group>"; };
+		5625F5A421DF3A4700FF090D /* RZZCollectionNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZCollectionNormalCell.swift; sourceTree = "<group>"; };
+		5625F5A521DF3A4700FF090D /* RZZCollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZCollectionNormalCell.xib; sourceTree = "<group>"; };
+		5625F5A821DF3FE200FF090D /* RZZCollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZCollectionPrettyCell.swift; sourceTree = "<group>"; };
+		5625F5A921DF3FE200FF090D /* RZZCollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZCollectionPrettyCell.xib; sourceTree = "<group>"; };
+		5625F5AC21DF4EC100FF090D /* RZZNetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZNetWorkTools.swift; sourceTree = "<group>"; };
 		5634BCA621DA5C1500F41973 /* DouYuZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DouYuZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5634BCA921DA5C1500F41973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5634BCB021DA5C1600F41973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,17 +77,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C425E0CE7511278E48276E /* Pods_DouYuZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		097BD0A33B4619BDC26EB074 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07CD17083CC56182905C4ABB /* Pods_DouYuZB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A193CE6421EE6B12EBF4FC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DD3A87B22361D67EC1A9785 /* Pods-DouYuZB.debug.xcconfig */,
+				30792BFC4538C0AC7127C5E6 /* Pods-DouYuZB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5625F59E21DEF8E200FF090D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5625F5A021DEF90800FF090D /* RZZCollectionHeaderView.swift */,
+				5625F5A121DEF90800FF090D /* RZZCollectionHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5625F59F21DEF8F000FF090D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5634BC9D21DA5C1500F41973 = {
 			isa = PBXGroup;
 			children = (
 				5634BCA821DA5C1500F41973 /* DouYuZB */,
 				5634BCA721DA5C1500F41973 /* Products */,
+				2A193CE6421EE6B12EBF4FC7 /* Pods */,
+				097BD0A33B4619BDC26EB074 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,8 +174,8 @@
 		5634BCBD21DA626A00F41973 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				565A6DB521DCEAC5001C0EDC /* Model */,
-				565A6DB721DCEADB001C0EDC /* View */,
+				5625F59F21DEF8F000FF090D /* Model */,
+				5625F59E21DEF8E200FF090D /* View */,
 				565A6DB621DCEAD3001C0EDC /* Controller */,
 			);
 			path = Home;
@@ -159,15 +213,9 @@
 			children = (
 				566FA86521DB5CCD002D23D0 /* extension */,
 				566FA86B21DB684C002D23D0 /* common.swift */,
+				5625F5AC21DF4EC100FF090D /* RZZNetWorkTools.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		565A6DB521DCEAC5001C0EDC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		565A6DB621DCEAD3001C0EDC /* Controller */ = {
@@ -178,13 +226,6 @@
 				565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		565A6DB721DCEADB001C0EDC /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		566FA86521DB5CCD002D23D0 /* extension */ = {
@@ -201,6 +242,10 @@
 			children = (
 				566FA86921DB649E002D23D0 /* RZZPageTitleView.swift */,
 				566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */,
+				5625F5A421DF3A4700FF090D /* RZZCollectionNormalCell.swift */,
+				5625F5A521DF3A4700FF090D /* RZZCollectionNormalCell.xib */,
+				5625F5A821DF3FE200FF090D /* RZZCollectionPrettyCell.swift */,
+				5625F5A921DF3FE200FF090D /* RZZCollectionPrettyCell.xib */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -212,9 +257,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5634BCB821DA5C1600F41973 /* Build configuration list for PBXNativeTarget "DouYuZB" */;
 			buildPhases = (
+				DBF5A9137BA14622AA63F029 /* [CP] Check Pods Manifest.lock */,
 				5634BCA221DA5C1500F41973 /* Sources */,
 				5634BCA321DA5C1500F41973 /* Frameworks */,
 				5634BCA421DA5C1500F41973 /* Resources */,
+				9BFA7AD53F0ADBB93318905E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +285,7 @@
 				TargetAttributes = {
 					5634BCA521DA5C1500F41973 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -264,16 +312,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5625F5AB21DF3FE200FF090D /* RZZCollectionPrettyCell.xib in Resources */,
 				566FA86021DB3E08002D23D0 /* RZZFollowViewController.xib in Resources */,
 				5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */,
+				5625F5A321DEF90800FF090D /* RZZCollectionHeaderView.xib in Resources */,
 				565A6DBB21DCEB3F001C0EDC /* RZZRecommendViewController.xib in Resources */,
 				5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */,
 				566FA85C21DB3DFA002D23D0 /* RZZLiveViewController.xib in Resources */,
 				566FA86421DB3E19002D23D0 /* RZZMyViewController.xib in Resources */,
+				5625F5A721DF3A4700FF090D /* RZZCollectionNormalCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BFA7AD53F0ADBB93318905E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF5A9137BA14622AA63F029 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DouYuZB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5634BCA221DA5C1500F41973 /* Sources */ = {
@@ -282,8 +380,11 @@
 			files = (
 				566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */,
 				566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */,
+				5625F5AA21DF3FE200FF090D /* RZZCollectionPrettyCell.swift in Sources */,
 				566FA85021DB32DA002D23D0 /* RZZNavigationViewController.swift in Sources */,
+				5625F5A621DF3A4700FF090D /* RZZCollectionNormalCell.swift in Sources */,
 				566FA86A21DB649E002D23D0 /* RZZPageTitleView.swift in Sources */,
+				5625F5A221DEF90800FF090D /* RZZCollectionHeaderView.swift in Sources */,
 				5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */,
 				566FA86C21DB684C002D23D0 /* common.swift in Sources */,
 				566FA85221DB3677002D23D0 /* RZZBaseViewController.swift in Sources */,
@@ -292,6 +393,7 @@
 				566FA85F21DB3E08002D23D0 /* RZZFollowViewController.swift in Sources */,
 				566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */,
 				566FA86721DB5CE7002D23D0 /* UIBarButtonItem-extension.swift in Sources */,
+				5625F5AD21DF4EC100FF090D /* RZZNetWorkTools.swift in Sources */,
 				566FA85B21DB3DFA002D23D0 /* RZZLiveViewController.swift in Sources */,
 				566FA86321DB3E19002D23D0 /* RZZMyViewController.swift in Sources */,
 			);
@@ -429,9 +531,11 @@
 		};
 		5634BCB921DA5C1600F41973 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD3A87B22361D67EC1A9785 /* Pods-DouYuZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,6 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chinarzz.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,9 +552,11 @@
 		};
 		5634BCBA21DA5C1600F41973 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30792BFC4538C0AC7127C5E6 /* Pods-DouYuZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DouYuZB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
