@@ -364,7 +364,7 @@ extension RZZRecommendViewModel {
             guard let dataArray = resultData["data"] as? [[String : NSObject]] else { return }
             
             for dic in dataArray {
-                let group = RZZAchorGroup.init(dic: dic)
+                let group = RZZAchorGroup.init(dict: dic)
                 self.anchorGroups.append(group)
             }
             dGroup.leave()

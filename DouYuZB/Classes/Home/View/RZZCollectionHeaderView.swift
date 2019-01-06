@@ -11,6 +11,7 @@ import UIKit
 class RZZCollectionHeaderView: UICollectionReusableView {
     //MARK: - 控件属性
     
+    @IBOutlet weak var moreBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     var model : RZZAchorGroup? {

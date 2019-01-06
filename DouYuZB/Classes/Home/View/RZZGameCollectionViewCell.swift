@@ -15,7 +15,7 @@ class RZZGameCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     //MARK: - Model
-    var model : RZZAchorGroup? {
+    var model : RZZBaseModel? {
         didSet {
             titleLabel.text = model?.tag_name
             let url = URL(string: model?.icon_url ?? "")
