@@ -124,7 +124,7 @@ extension RZZRecommendViewModel {
         }
         //3.请求后面部分的数据
         let resultData : [String : Any] = ["error" : 0,"data" : [
-            ["tag_name" : "魔兽世界", "room_list" : [
+            ["tag_name" : "魔兽世界", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -150,7 +150,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "王者荣耀", "room_list" : [
+            ["tag_name" : "王者荣耀", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -176,7 +176,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "穿越火线", "room_list" : [
+            ["tag_name" : "穿越火线", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -202,7 +202,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "地下城", "room_list" : [
+            ["tag_name" : "地下城", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -228,7 +228,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "QQ飞车", "room_list" : [
+            ["tag_name" : "QQ飞车", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -254,7 +254,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "傻逼腾讯", "room_list" : [
+            ["tag_name" : "绝地求生", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -280,7 +280,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "缺德网易", "room_list" : [
+            ["tag_name" : "斗地主", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -306,7 +306,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "流氓百度", "room_list" : [
+            ["tag_name" : "足球世界", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,
@@ -332,7 +332,7 @@ extension RZZRecommendViewModel {
                  "nickname" : "imbadota2频道",
                  "online" : 232311]]
             ],
-            ["tag_name" : "倒霉京东", "room_list" : [
+            ["tag_name" : "大话西游", "icon_url" : "https://cs-op.douyucdn.cn/dycatr/game_cate/f779aaa7554c44c8f0e43e2845a8683e.png", "room_list" : [
                 ["room_id" : 19002,
                  "vertical_src" : "https://rpic.douyucdn.cn/asrpic/190105/19002_1731.jpg/dy1",
                  "is_vertical" : 0,

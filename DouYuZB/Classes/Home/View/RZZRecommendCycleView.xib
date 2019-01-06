@@ -25,6 +25,7 @@
                     </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="iN0-l3-epB" id="eFB-tx-cPm"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="eeF-aa-gl0"/>
                     </connections>
                 </collectionView>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="n1c-tM-Slb">
@@ -33,7 +34,7 @@
                     <color key="currentPageIndicatorTintColor" red="1" green="0.55527664346862915" blue="0.57799778022780646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </pageControl>
             </subviews>
-            <color key="backgroundColor" red="0.039215686270000001" green="0.80392156859999997" blue="0.066666666669999999" alpha="0.87" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="6J7-vE-eJw" secondAttribute="bottom" id="FHb-Wu-Jau"/>
                 <constraint firstAttribute="trailing" secondItem="6J7-vE-eJw" secondAttribute="trailing" id="Mgj-i4-R0L"/>

@@ -17,10 +17,49 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="310" height="122"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="T9I-fC-evf">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="122"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G7-6Q-8lf">
+                        <rect key="frame" x="0.0" y="92" width="310" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是标题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6G-4y-YIg">
+                                <rect key="frame" x="5" y="11" width="300" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L6G-4y-YIg" firstAttribute="centerX" secondItem="8G7-6Q-8lf" secondAttribute="centerX" id="619-lW-byv"/>
+                            <constraint firstAttribute="height" constant="30" id="BaG-dW-Vzw"/>
+                            <constraint firstItem="L6G-4y-YIg" firstAttribute="leading" secondItem="8G7-6Q-8lf" secondAttribute="leading" constant="5" id="Fcf-hu-22F"/>
+                            <constraint firstAttribute="bottom" secondItem="L6G-4y-YIg" secondAttribute="bottom" constant="3" id="QwU-nq-MVr"/>
+                        </constraints>
+                    </view>
+                </subviews>
             </view>
+            <constraints>
+                <constraint firstItem="8G7-6Q-8lf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Ut-cY-1te"/>
+                <constraint firstAttribute="trailing" secondItem="T9I-fC-evf" secondAttribute="trailing" id="JYx-eA-JGg"/>
+                <constraint firstAttribute="bottom" secondItem="8G7-6Q-8lf" secondAttribute="bottom" id="Uvk-e0-pwB"/>
+                <constraint firstAttribute="trailing" secondItem="8G7-6Q-8lf" secondAttribute="trailing" id="cSR-Q2-WiW"/>
+                <constraint firstAttribute="bottom" secondItem="T9I-fC-evf" secondAttribute="bottom" id="iqh-jK-Ml4"/>
+                <constraint firstItem="T9I-fC-evf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vQC-Nf-TwF"/>
+                <constraint firstItem="T9I-fC-evf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zTm-Jb-S0j"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="310" height="122"/>
-            <point key="canvasLocation" x="122" y="112"/>
+            <connections>
+                <outlet property="iconImageView" destination="T9I-fC-evf" id="y8U-jS-Cs7"/>
+                <outlet property="titleLabel" destination="L6G-4y-YIg" id="dOE-hV-ceO"/>
+            </connections>
+            <point key="canvasLocation" x="121.59999999999999" y="111.54422788605699"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="Img_default" width="172.5" height="103.5"/>
+    </resources>
 </document>

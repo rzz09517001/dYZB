@@ -24,6 +24,8 @@ class RZZAchorGroup: NSObject {
     @objc var tag_name : String = ""
     //组显示的图标
     @objc var icon_name : String = "home_header_phone"
+    //游戏对应图标
+    @objc var icon_url : String = ""
     
     lazy var anchors : [RZZAnchorModel] = [RZZAnchorModel]()
     

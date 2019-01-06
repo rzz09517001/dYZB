@@ -14,6 +14,7 @@ private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
 private let kCycleViewH = kScreenW * 3/8
+private let kGameViewH : CGFloat = 90
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -51,8 +52,13 @@ class RZZRecommendViewController: UIViewController {
     }()
     private lazy var cycleView : RZZRecommendCycleView = {
         let cycleView = RZZRecommendCycleView.recommendCycleView()
-        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
         return cycleView
+    }()
+    private lazy var gameView : RZZRecommendGameView = {
+        let gameView = RZZRecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+        return gameView
     }()
     
     //MARK: - 系统回调方法
@@ -71,8 +77,9 @@ extension RZZRecommendViewController {
     private func setupUI() {
         view.addSubview(collectionView)
         collectionView.addSubview(cycleView)
+        collectionView.addSubview(gameView)
         //设置collectionView的内边距
-        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH + kGameViewH, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -82,6 +89,7 @@ extension RZZRecommendViewController {
         //请求数据
         recommendVM.requestData {
             self.collectionView.reloadData()
+            self.gameView.groups = self.recommendVM.anchorGroups
         }
         //轮播数据
         recommendVM.requestCycleData {
