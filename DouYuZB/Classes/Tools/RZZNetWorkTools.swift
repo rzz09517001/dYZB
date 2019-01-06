@@ -15,9 +15,15 @@ enum MethodType {
 }
 
 class RZZNetWorkTools {
-    class func requestData(type: MethodType, urlString: String, parameters: [String : String]? = nil){
-        let method = type == .GET ? HTTPMethod.get : HTTPMethod.post
-        
+    class func requestDta(urlString: String, method: MethodType, parameters: [String : Any]? = nil, finishedCallback: @escaping (_ result : AnyObject) -> ()) {
+        let requestMethod = (method == .GET ? HTTPMethod.get : HTTPMethod.post)
+        Alamofire.request(urlString, method: requestMethod, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
+            guard let result = response.result.value else {
+                print(response.result.error as Any)
+                return
+            }
+            finishedCallback(result as AnyObject)
+        }
     }
 
 }

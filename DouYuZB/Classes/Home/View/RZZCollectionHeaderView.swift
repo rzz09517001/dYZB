@@ -9,10 +9,14 @@
 import UIKit
 
 class RZZCollectionHeaderView: UICollectionReusableView {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    //MARK: - 控件属性
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
+    var model : RZZAchorGroup? {
+        didSet {
+            titleLabel.text = model?.tag_name
+            iconImageView.image = UIImage(named: model?.icon_name ?? "home_header_phone")
+        }
+    }
 }

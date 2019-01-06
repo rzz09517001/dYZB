@@ -17,6 +17,11 @@
 		5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5634BCA921DA5C1500F41973 /* AppDelegate.swift */; };
 		5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB021DA5C1600F41973 /* Assets.xcassets */; };
 		5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5634BCB221DA5C1600F41973 /* LaunchScreen.storyboard */; };
+		5653A4E521E1034C00D919A2 /* RZZRecommendCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653A4E421E1034C00D919A2 /* RZZRecommendCycleView.swift */; };
+		5653A4E721E1036200D919A2 /* RZZRecommendCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5653A4E621E1036200D919A2 /* RZZRecommendCycleView.xib */; };
+		5653A4E921E117D500D919A2 /* RZZCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653A4E821E117D500D919A2 /* RZZCycleModel.swift */; };
+		5653A4EC21E11ED500D919A2 /* RZZCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5653A4EA21E11ED500D919A2 /* RZZCollectionCycleCell.swift */; };
+		5653A4ED21E11ED500D919A2 /* RZZCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5653A4EB21E11ED500D919A2 /* RZZCollectionCycleCell.xib */; };
 		565A6DBA21DCEB3F001C0EDC /* RZZRecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */; };
 		565A6DBB21DCEB3F001C0EDC /* RZZRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */; };
 		566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA84D21DB2CF7002D23D0 /* RZZTabBarViewController.swift */; };
@@ -34,6 +39,10 @@
 		566FA86C21DB684C002D23D0 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86B21DB684C002D23D0 /* common.swift */; };
 		566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */; };
 		566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FA86F21DB7823002D23D0 /* UIColor-extension.swift */; };
+		56D0D71B21E0A03E00BA4231 /* RZZRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */; };
+		56D0D71D21E0A79900BA4231 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71C21E0A79900BA4231 /* NSDate-extension.swift */; };
+		56D0D71F21E0B5D800BA4231 /* RZZAchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71E21E0B5D800BA4231 /* RZZAchorGroup.swift */; };
+		56D0D72121E0C2C500BA4231 /* RZZAnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D72021E0C2C500BA4231 /* RZZAnchorModel.swift */; };
 		A5C425E0CE7511278E48276E /* Pods_DouYuZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07CD17083CC56182905C4ABB /* Pods_DouYuZB.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +62,11 @@
 		5634BCB021DA5C1600F41973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5634BCB321DA5C1600F41973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5634BCB521DA5C1600F41973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5653A4E421E1034C00D919A2 /* RZZRecommendCycleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZRecommendCycleView.swift; sourceTree = "<group>"; };
+		5653A4E621E1036200D919A2 /* RZZRecommendCycleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZRecommendCycleView.xib; sourceTree = "<group>"; };
+		5653A4E821E117D500D919A2 /* RZZCycleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZCycleModel.swift; sourceTree = "<group>"; };
+		5653A4EA21E11ED500D919A2 /* RZZCollectionCycleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZCollectionCycleCell.swift; sourceTree = "<group>"; };
+		5653A4EB21E11ED500D919A2 /* RZZCollectionCycleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZCollectionCycleCell.xib; sourceTree = "<group>"; };
 		565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZRecommendViewController.swift; sourceTree = "<group>"; };
 		565A6DB921DCEB3F001C0EDC /* RZZRecommendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZRecommendViewController.xib; sourceTree = "<group>"; };
 		566FA84D21DB2CF7002D23D0 /* RZZTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZTabBarViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +84,10 @@
 		566FA86B21DB684C002D23D0 /* common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		566FA86D21DB75A0002D23D0 /* RZZPageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZPageContentView.swift; sourceTree = "<group>"; };
 		566FA86F21DB7823002D23D0 /* UIColor-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-extension.swift"; sourceTree = "<group>"; };
+		56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZRecommendViewModel.swift; sourceTree = "<group>"; };
+		56D0D71C21E0A79900BA4231 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
+		56D0D71E21E0B5D800BA4231 /* RZZAchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZAchorGroup.swift; sourceTree = "<group>"; };
+		56D0D72021E0C2C500BA4231 /* RZZAnchorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZAnchorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,10 @@
 			children = (
 				5625F5A021DEF90800FF090D /* RZZCollectionHeaderView.swift */,
 				5625F5A121DEF90800FF090D /* RZZCollectionHeaderView.xib */,
+				5653A4E421E1034C00D919A2 /* RZZRecommendCycleView.swift */,
+				5653A4E621E1036200D919A2 /* RZZRecommendCycleView.xib */,
+				5653A4EA21E11ED500D919A2 /* RZZCollectionCycleCell.swift */,
+				5653A4EB21E11ED500D919A2 /* RZZCollectionCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +135,9 @@
 		5625F59F21DEF8F000FF090D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				56D0D71E21E0B5D800BA4231 /* RZZAchorGroup.swift */,
+				56D0D72021E0C2C500BA4231 /* RZZAnchorModel.swift */,
+				5653A4E821E117D500D919A2 /* RZZCycleModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +202,7 @@
 				5625F59F21DEF8F000FF090D /* Model */,
 				5625F59E21DEF8E200FF090D /* View */,
 				565A6DB621DCEAD3001C0EDC /* Controller */,
+				56D0D71921E09FCE00BA4231 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -233,6 +259,7 @@
 			children = (
 				566FA86621DB5CE7002D23D0 /* UIBarButtonItem-extension.swift */,
 				566FA86F21DB7823002D23D0 /* UIColor-extension.swift */,
+				56D0D71C21E0A79900BA4231 /* NSDate-extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -250,6 +277,14 @@
 			path = CommonView;
 			sourceTree = "<group>";
 		};
+		56D0D71921E09FCE00BA4231 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,7 +296,7 @@
 				5634BCA221DA5C1500F41973 /* Sources */,
 				5634BCA321DA5C1500F41973 /* Frameworks */,
 				5634BCA421DA5C1500F41973 /* Resources */,
-				9BFA7AD53F0ADBB93318905E /* [CP] Embed Pods Frameworks */,
+				3A1FF989362D98752F91403F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +350,8 @@
 				5625F5AB21DF3FE200FF090D /* RZZCollectionPrettyCell.xib in Resources */,
 				566FA86021DB3E08002D23D0 /* RZZFollowViewController.xib in Resources */,
 				5634BCB421DA5C1600F41973 /* LaunchScreen.storyboard in Resources */,
+				5653A4ED21E11ED500D919A2 /* RZZCollectionCycleCell.xib in Resources */,
+				5653A4E721E1036200D919A2 /* RZZRecommendCycleView.xib in Resources */,
 				5625F5A321DEF90800FF090D /* RZZCollectionHeaderView.xib in Resources */,
 				565A6DBB21DCEB3F001C0EDC /* RZZRecommendViewController.xib in Resources */,
 				5634BCB121DA5C1600F41973 /* Assets.xcassets in Resources */,
@@ -327,7 +364,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9BFA7AD53F0ADBB93318905E /* [CP] Embed Pods Frameworks */ = {
+		3A1FF989362D98752F91403F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,12 +374,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DouYuZB/Pods-DouYuZB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,18 +418,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				566FA86E21DB75A0002D23D0 /* RZZPageContentView.swift in Sources */,
+				56D0D72121E0C2C500BA4231 /* RZZAnchorModel.swift in Sources */,
 				566FA87021DB7823002D23D0 /* UIColor-extension.swift in Sources */,
+				56D0D71D21E0A79900BA4231 /* NSDate-extension.swift in Sources */,
 				5625F5AA21DF3FE200FF090D /* RZZCollectionPrettyCell.swift in Sources */,
 				566FA85021DB32DA002D23D0 /* RZZNavigationViewController.swift in Sources */,
 				5625F5A621DF3A4700FF090D /* RZZCollectionNormalCell.swift in Sources */,
 				566FA86A21DB649E002D23D0 /* RZZPageTitleView.swift in Sources */,
 				5625F5A221DEF90800FF090D /* RZZCollectionHeaderView.swift in Sources */,
+				5653A4E521E1034C00D919A2 /* RZZRecommendCycleView.swift in Sources */,
 				5634BCAA21DA5C1500F41973 /* AppDelegate.swift in Sources */,
 				566FA86C21DB684C002D23D0 /* common.swift in Sources */,
 				566FA85221DB3677002D23D0 /* RZZBaseViewController.swift in Sources */,
+				5653A4E921E117D500D919A2 /* RZZCycleModel.swift in Sources */,
 				566FA85521DB3DD9002D23D0 /* RZZHomeViewController.swift in Sources */,
+				5653A4EC21E11ED500D919A2 /* RZZCollectionCycleCell.swift in Sources */,
 				565A6DBA21DCEB3F001C0EDC /* RZZRecommendViewController.swift in Sources */,
 				566FA85F21DB3E08002D23D0 /* RZZFollowViewController.swift in Sources */,
+				56D0D71B21E0A03E00BA4231 /* RZZRecommendViewModel.swift in Sources */,
+				56D0D71F21E0B5D800BA4231 /* RZZAchorGroup.swift in Sources */,
 				566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */,
 				566FA86721DB5CE7002D23D0 /* UIBarButtonItem-extension.swift in Sources */,
 				5625F5AD21DF4EC100FF090D /* RZZNetWorkTools.swift in Sources */,
@@ -546,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -566,7 +612,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.chinarzz.DouYuZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

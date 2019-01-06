@@ -13,6 +13,7 @@ private let kItemW = (kScreenW - 3 * kItemMargin) / 2
 private let kNormalItemH = kItemW * 3 / 4
 private let kPrettyItemH = kItemW * 4 / 3
 private let kHeaderViewH : CGFloat = 50
+private let kCycleViewH = kScreenW * 3/8
 private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 private let kPrettyCellID = "kPrettyCellID"
@@ -20,6 +21,7 @@ private let kPrettyCellID = "kPrettyCellID"
 class RZZRecommendViewController: UIViewController {
 
     //MARK: - 懒加载属性
+    private lazy var recommendVM : RZZRecommendViewModel = RZZRecommendViewModel()
     private lazy var collectionView : UICollectionView =  { [unowned self] in
         //创建布局
         let layout = UICollectionViewFlowLayout()
@@ -47,48 +49,75 @@ class RZZRecommendViewController: UIViewController {
         collectionView.register(UINib(nibName: "RZZCollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
     }()
+    private lazy var cycleView : RZZRecommendCycleView = {
+        let cycleView = RZZRecommendCycleView.recommendCycleView()
+        cycleView.frame = CGRect(x: 0, y: -kCycleViewH, width: kScreenW, height: kCycleViewH)
+        return cycleView
+    }()
     
     //MARK: - 系统回调方法
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.purple
         //设置UI
         setupUI()
+        //请求数据
+        loadData()
     }
 
 }
 
+//MARK: - 设置UI
 extension RZZRecommendViewController {
     private func setupUI() {
         view.addSubview(collectionView)
+        collectionView.addSubview(cycleView)
+        //设置collectionView的内边距
+        collectionView.contentInset = UIEdgeInsets(top: kCycleViewH, left: 0, bottom: 0, right: 0)
+    }
+}
+
+//MARK: - 请求数据
+extension RZZRecommendViewController {
+    private func loadData() {
+        //请求数据
+        recommendVM.requestData {
+            self.collectionView.reloadData()
+        }
+        //轮播数据
+        recommendVM.requestCycleData {
+            self.cycleView.cycleModels = self.recommendVM.cycleModels
+        }
     }
 }
 
 //MARK: - 遵守UICollectionView 的dataSources
 extension RZZRecommendViewController : UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return self.recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let group = self.recommendVM.anchorGroups[section]
+        return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell : UICollectionViewCell!
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchorModel = group.anchors[indexPath.row]
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! RZZCollectionPrettyCell
+            cell.anchor = anchorModel
+            return cell
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! RZZCollectionNormalCell
+            cell.anchor = anchorModel
+            return cell
         }
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        let headerView : RZZCollectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! RZZCollectionHeaderView
+        headerView.model = recommendVM.anchorGroups[indexPath.section]
         return headerView
     }
     

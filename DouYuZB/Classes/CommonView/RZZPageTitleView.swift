@@ -103,6 +103,8 @@ extension RZZPageTitleView {
     @objc private func titleLabelClick(tapGes: UITapGestureRecognizer) {
         //获取当前Label的下标值
         guard let currentLabel = tapGes.view as? UILabel else { return }
+        //判断是否点击的是当前选中的Label，即重复点击
+        if currentLabel.tag == currentIndex { return }
         //获取之前Label
         let oldLabel = titleLabels[currentIndex]
         //切换文字颜色
