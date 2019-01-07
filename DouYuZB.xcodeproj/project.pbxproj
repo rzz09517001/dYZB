@@ -54,6 +54,8 @@
 		569DD6D621E313DC0005E798 /* RZZAmuseMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DD6D521E313DC0005E798 /* RZZAmuseMenuView.xib */; };
 		569DD6D921E328250005E798 /* RZZAmuseMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DD6D721E328250005E798 /* RZZAmuseMenuCell.swift */; };
 		569DD6DA21E328250005E798 /* RZZAmuseMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569DD6D821E328250005E798 /* RZZAmuseMenuCell.xib */; };
+		569DD6DC21E331C40005E798 /* RZZFunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DD6DB21E331C40005E798 /* RZZFunnyViewController.swift */; };
+		569DD6DE21E334F50005E798 /* RZZFunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569DD6DD21E334F50005E798 /* RZZFunnyViewModel.swift */; };
 		56D0D71B21E0A03E00BA4231 /* RZZRecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */; };
 		56D0D71D21E0A79900BA4231 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71C21E0A79900BA4231 /* NSDate-extension.swift */; };
 		56D0D71F21E0B5D800BA4231 /* RZZAchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D0D71E21E0B5D800BA4231 /* RZZAchorGroup.swift */; };
@@ -114,6 +116,8 @@
 		569DD6D521E313DC0005E798 /* RZZAmuseMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZAmuseMenuView.xib; sourceTree = "<group>"; };
 		569DD6D721E328250005E798 /* RZZAmuseMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZAmuseMenuCell.swift; sourceTree = "<group>"; };
 		569DD6D821E328250005E798 /* RZZAmuseMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RZZAmuseMenuCell.xib; sourceTree = "<group>"; };
+		569DD6DB21E331C40005E798 /* RZZFunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZFunnyViewController.swift; sourceTree = "<group>"; };
+		569DD6DD21E334F50005E798 /* RZZFunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZFunnyViewModel.swift; sourceTree = "<group>"; };
 		56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZRecommendViewModel.swift; sourceTree = "<group>"; };
 		56D0D71C21E0A79900BA4231 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
 		56D0D71E21E0B5D800BA4231 /* RZZAchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RZZAchorGroup.swift; sourceTree = "<group>"; };
@@ -301,6 +305,7 @@
 				565A6DB821DCEB3F001C0EDC /* RZZRecommendViewController.swift */,
 				563BDC6821E1F8BE0014EDF8 /* RZZGameViewController.swift */,
 				569DD6C921E2EDF00005E798 /* RZZAmuseViewController.swift */,
+				569DD6DB21E331C40005E798 /* RZZFunnyViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 				56D0D71A21E0A03E00BA4231 /* RZZRecommendViewModel.swift */,
 				563BDC6A21E1FE480014EDF8 /* RZZGameViewModel.swift */,
 				569DD6CB21E2F0370005E798 /* RZZAmuseViewModel.swift */,
+				569DD6DD21E334F50005E798 /* RZZFunnyViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				563BDC6121E1DF770014EDF8 /* RZZRecommendGameView.swift in Sources */,
 				566FA85221DB3677002D23D0 /* RZZBaseAnchorViewController.swift in Sources */,
 				5653A4E921E117D500D919A2 /* RZZCycleModel.swift in Sources */,
+				569DD6DE21E334F50005E798 /* RZZFunnyViewModel.swift in Sources */,
 				566FA85521DB3DD9002D23D0 /* RZZHomeViewController.swift in Sources */,
 				569DD6D921E328250005E798 /* RZZAmuseMenuCell.swift in Sources */,
 				5653A4EC21E11ED500D919A2 /* RZZCollectionCycleCell.swift in Sources */,
@@ -521,6 +528,7 @@
 				56D0D71B21E0A03E00BA4231 /* RZZRecommendViewModel.swift in Sources */,
 				56D0D71F21E0B5D800BA4231 /* RZZAchorGroup.swift in Sources */,
 				566FA84E21DB2CF7002D23D0 /* RZZTabBarViewController.swift in Sources */,
+				569DD6DC21E331C40005E798 /* RZZFunnyViewController.swift in Sources */,
 				566FA86721DB5CE7002D23D0 /* UIBarButtonItem-extension.swift in Sources */,
 				563BDC7021E20FD80014EDF8 /* RZZBaseModel.swift in Sources */,
 				5625F5AD21DF4EC100FF090D /* RZZNetWorkTools.swift in Sources */,
