@@ -18,7 +18,7 @@ private let kNormalCellID = "kNormalCellID"
 private let kHeaderViewID = "kHeaderViewID"
 let kPrettyCellID = "kPrettyCellID"
 
-class RZZBaseAnchorViewController: UIViewController {
+class RZZBaseAnchorViewController: RZZBaseViewController {
 
     // MARK: -懒加载属性
     var baseVM : RZZBaseViewModel!
@@ -59,8 +59,11 @@ class RZZBaseAnchorViewController: UIViewController {
 
 // MARK: - 设置UI
 extension RZZBaseAnchorViewController {
-     @objc func setupUI() {
+     override func setupUI() {
+        //给父类中的属性赋值
+        contentView = collectionView
         view.addSubview(collectionView)
+        super.setupUI()
     }
 }
 

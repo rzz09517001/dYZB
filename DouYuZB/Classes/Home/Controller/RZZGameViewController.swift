@@ -17,7 +17,7 @@ private let kGameViewH : CGFloat = 90
 private let kGameCellID  = "kGameCellID"
 private let kHeaderViewID = "kHeaderViewID"
 
-class RZZGameViewController: UIViewController {
+class RZZGameViewController: RZZBaseViewController {
 
     //MARK: - 懒加载属性
     fileprivate lazy var gameVM : RZZGameViewModel = RZZGameViewModel()
@@ -61,12 +61,14 @@ class RZZGameViewController: UIViewController {
 
 //MARK: - 设置UI
 extension RZZGameViewController {
-    private func setupUI() {
+    override func setupUI() {
+        contentView = collectionView
         view.addSubview(collectionView)
         collectionView.addSubview(topHeaderView)
         collectionView.addSubview(gameView)
         //设置colletionView的内边距
         collectionView.contentInset = UIEdgeInsets(top: kHeaderViewH + kGameViewH, left: 0, bottom: 0, right: 0)
+        super.setupUI()
     }
 }
 
@@ -78,6 +80,7 @@ extension RZZGameViewController {
             self.collectionView.reloadData()
             //展示常用游戏
             self.gameView.groups = Array((self.gameVM.gameModels?[0..<10])!)
+            self.loadDataFinished()
         }
     }
 }

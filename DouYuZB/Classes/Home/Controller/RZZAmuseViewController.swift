@@ -37,6 +37,7 @@ extension RZZAmuseViewController {
         amuseVM.loadAmuseData {
             self.collectionView.reloadData()
             self.amuseMenuView.groups = self.amuseVM.anchorGroups
+            self.loadDataFinished()
         }
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 private let kTitleViewH : CGFloat = 40.0
 private let kTabbarH : CGFloat = 44
 
-class RZZHomeViewController: RZZBaseViewController {
+class RZZHomeViewController: UIViewController {
     //懒加载
     private lazy var pageTitleView : RZZPageTitleView = { [weak self] in
         let titleFram = CGRect(x: 0, y: kStatusBarH + kNaviBarH, width: kScreenW, height: kTitleViewH)
