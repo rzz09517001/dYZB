@@ -76,7 +76,7 @@ extension RZZBaseAnchorViewController {
 
 
 // MARK: - 数据协议
-extension RZZBaseAnchorViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension RZZBaseAnchorViewController : UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return baseVM.anchorGroups.count
     }
@@ -95,5 +95,11 @@ extension RZZBaseAnchorViewController : UICollectionViewDelegate, UICollectionVi
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! RZZCollectionHeaderView
         headerView.model = baseVM.anchorGroups[indexPath.section]
         return headerView
+    }
+}
+
+extension RZZBaseAnchorViewController : UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath)
     }
 }
