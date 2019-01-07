@@ -14,15 +14,8 @@ private let kEdgeInsetMargin : CGFloat = 10
 class RZZRecommendGameView: UIView {
 
     //MARK: - 传递属性
-    var groups : [RZZAchorGroup]? {
+    var groups : [RZZBaseModel]? {
         didSet {
-            //移除前2组数据
-            groups?.removeFirst()
-            groups?.removeFirst()
-            //最后添加个更多组
-            let moreGroup = RZZAchorGroup()
-            moreGroup.tag_name = "更多"
-            groups?.append(moreGroup)
             collecionView.reloadData()
         }
     }

@@ -2,7 +2,7 @@
 //  RZZBaseViewController.swift
 //  DouYuZB
 //
-//  Created by 任志忠 on 2019/1/1.
+//  Created by renzhizhong on 2019/1/7.
 //  Copyright © 2019 rzz. All rights reserved.
 //
 
@@ -12,7 +12,8 @@ class RZZBaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {

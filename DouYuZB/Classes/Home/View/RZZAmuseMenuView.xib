@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RZZAmuseMenuView" customModule="DouYuZB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="dFe-EV-1pU">
+                    <rect key="frame" x="152" y="158" width="71" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.43781203951832981" blue="0.31319923169355102" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                </pageControl>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vLc-dF-L5i">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="163"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="TSg-RU-Vxs">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="xJR-7f-c1n"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="amx-Yg-rDw"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dFe-EV-1pU" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-5" id="8ig-TV-cae"/>
+                <constraint firstItem="vLc-dF-L5i" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="EZP-NH-Qix"/>
+                <constraint firstItem="vLc-dF-L5i" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SF1-79-skK"/>
+                <constraint firstItem="dFe-EV-1pU" firstAttribute="top" secondItem="vLc-dF-L5i" secondAttribute="bottom" constant="-5" id="bqw-fA-Phw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vLc-dF-L5i" secondAttribute="trailing" id="dXd-ct-t03"/>
+                <constraint firstItem="dFe-EV-1pU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ozi-X2-uON"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="vLc-dF-L5i" id="71r-49-GtK"/>
+                <outlet property="pageControl" destination="dFe-EV-1pU" id="bCu-qM-0ZP"/>
+            </connections>
+        </view>
+    </objects>
+</document>

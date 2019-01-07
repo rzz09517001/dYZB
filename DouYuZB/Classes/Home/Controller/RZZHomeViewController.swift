@@ -29,7 +29,8 @@ class RZZHomeViewController: RZZBaseViewController {
         var childVcs = [UIViewController]()
         childVcs.append(RZZRecommendViewController())
         childVcs.append(RZZGameViewController())
-        for _ in 0..<2 {
+        childVcs.append(RZZAmuseViewController())
+        for _ in 0..<1 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             childVcs.append(vc)
@@ -50,7 +51,7 @@ class RZZHomeViewController: RZZBaseViewController {
 
 // MARK: 设置UI
 extension RZZHomeViewController {
-    private func setupUI() {
+    fileprivate func setupUI() {
         //不需要系统自动调整scrollView的内边距
         setupNaviBar()
         view.addSubview(pageTitleView)

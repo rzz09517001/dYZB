@@ -21,3 +21,12 @@ class RZZCollectionHeaderView: UICollectionReusableView {
         }
     }
 }
+
+// MARK: - 从xib快速创建的类方法
+extension RZZCollectionHeaderView {
+    class func collectionHeaderView() -> RZZCollectionHeaderView {
+        return Bundle.main.loadNibNamed("RZZCollectionHeaderView", owner: nil, options: nil)?.first as! RZZCollectionHeaderView
+    }
+}
+
+
